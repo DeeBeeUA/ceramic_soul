@@ -1,0 +1,32 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+
+# production
+/build
+/dist/
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+*.log
+
+# IDE specific files
+/.idea/
+/.vscode/
+
+# Temp files
+*.tmp
+*.swp
+
+# Static files
+/public/
+
+# Testing
+/coverage/
