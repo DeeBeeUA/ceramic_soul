@@ -1,5 +1,14 @@
 .promo {
     padding-top: 50px;
+    position: relative;
+
+    &__potter {
+        display: none;
+    }
+
+    &__wrapper {
+        margin-top: 50px;
+    }
 
     &__title {
         margin-block-start: 50px;
@@ -15,5 +24,77 @@
 
     &__btn {
         margin: 18px auto 0 auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .promo {
+        &__wrapper {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__title {
+            margin-block-start: 0px;
+            padding-inline: 0px;
+            padding: 250px 0 0 71px;
+            text-align: start;
+        }
+
+        &__img {
+            margin: 0;
+            width: 230px;
+            height: 321px;
+        }
+
+
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .promo {
+        &__potter {
+            position: absolute;
+            left: -8px;
+            top: 0;
+            display: block;
+            width: 450px;
+            height: 633px;
+        }
+
+        &__title {
+            padding-left: 571px;
+        }
+
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .promo {
+        padding-top: 40px;
+
+        &__potter {
+            width: 640px;
+            height: 900px;
+        }
+
+        &__wrapper {
+            margin-top: 79px;
+        }
+
+        &__title {
+            padding: 384px 0 0 642px;
+        }
+
+        &__img {
+            width: 330px;
+            height: 460px;
+        }
+
+        &__btn {
+            margin-top: 50px;
+        }
+
     }
 }
