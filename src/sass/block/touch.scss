@@ -1,0 +1,71 @@
+.touch {
+    padding-top: 60px;
+
+    &__wrapper {
+        margin-top: 60px;
+        position: relative;
+    }
+
+    &__img {
+        display: none;
+    }
+
+    &__vase {
+        display: none;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 85px;
+        height: 85px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .touch {
+        padding-left: 21px;
+
+        &__wrapper {
+            margin-top: 45px;
+        }
+
+        &__vase {
+            display: block;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .touch {
+        padding-left: 0;
+
+        &__wrapper {
+            margin-top: 80px;
+            display: flex;
+            gap: 0 40px;
+        }
+
+        &__img {
+            display: block;
+            width: 550px;
+            height: 341.757px;
+            box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .touch {
+        padding-top: 100px;
+
+        &__wrapper {
+            margin-top: 80px;
+            margin-right: 75px;
+            gap: 0 147px;
+        }
+
+        &__img {
+            width: 573px;
+            height: 356px;
+        }
+    }
+}
