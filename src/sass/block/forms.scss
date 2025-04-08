@@ -17,6 +17,10 @@
         font-weight: 400;
         line-height: 28px;
 
+        &:nth-child(2) {
+            margin-top: 8px;
+        }
+
         &-policy {
             color: $dark;
             font-family: Inter;
