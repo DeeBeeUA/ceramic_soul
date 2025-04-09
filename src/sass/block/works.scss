@@ -1,11 +1,7 @@
 @use '/src/sass/base/variables.scss' as *;
 
 .works {
-    padding-top: 60px;
-
-    // &__title {
-    //     font-size: 31px;
-    // }
+    padding: 60px 0 95px 0;
 
     &__slider {
         margin-top: 40px;
