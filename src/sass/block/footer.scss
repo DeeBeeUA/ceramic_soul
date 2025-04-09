@@ -81,6 +81,7 @@
 
         & a {
             color: #A22DC6;
+            text-decoration: none;
         }
     }
 
@@ -97,6 +98,10 @@
         font-weight: 400;
         line-height: normal;
         text-transform: uppercase;
+
+        &:hover {
+            color: $dark;
+        }
     }
 
     &__block {
