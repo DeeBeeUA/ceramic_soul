@@ -169,3 +169,13 @@
         line-height: normal;
     }
 }
+
+@media screen and (min-width: 768px) {
+    .footer {
+        &__wrapper {
+            flex-wrap: wrap;
+            flex-direction: row;
+            gap: 40px 197px;
+        }
+    }
+}
