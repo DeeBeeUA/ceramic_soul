@@ -179,3 +179,17 @@
         }
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .footer {
+        &__wrapper {
+            gap: 0 164px;
+        }
+
+        &__policy {
+            margin-top: 50px;
+        }
+    }
+
+
+}
