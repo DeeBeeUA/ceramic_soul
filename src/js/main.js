@@ -9,6 +9,20 @@ import 'swiper/css/pagination';
 
 import '/src/sass/style.scss';
 
+const burger = document.querySelector('.burger');
+const close = document.querySelector('.header__menu-close');
+const menu = document.querySelector('.header__menu');
+
+burger.addEventListener("click", () => {
+    menu.classList.add("header__menu-active");
+    document.body.style.overflow = "hidden";
+});
+
+close.addEventListener("click", () => {
+    menu.classList.remove("header__menu-active");
+    document.body.style.overflow = "";
+});
+
 const swiper = new Swiper('.swiper', {
     slidesPerView: 1,
     spaceBetween: 5,
