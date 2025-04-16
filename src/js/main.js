@@ -23,26 +23,48 @@ close.addEventListener("click", () => {
     document.body.style.overflow = "";
 });
 
-const swiper = new Swiper('.swiper', {
-    slidesPerView: 1,
-    spaceBetween: 5,
-    loop: true,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    navigation: {
-        nextEl: ".icon-right-open",
-        prevEl: ".icon-left-open",
-    },
-    breakpoints: {
-        1200: {
-            slidesPerView: 3,
-            spaceBetween: 5
+try {
+    const swiper = new Swiper('.swiper', {
+        slidesPerView: 1,
+        spaceBetween: 5,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
         },
-        1920: {
-            spaceBetween: 35
-        }
-    },
-    modules: [Navigation, Pagination],
-});
+        navigation: {
+            nextEl: ".icon-right-open",
+            prevEl: ".icon-left-open",
+        },
+        breakpoints: {
+            1200: {
+                slidesPerView: 3,
+                spaceBetween: 5
+            },
+            1920: {
+                spaceBetween: 35
+            }
+        },
+        modules: [Navigation, Pagination],
+    });
+} catch (e) { }
+
+try {
+    const tabs = document.querySelectorAll(".catalog__tab");
+    const contents = document.querySelectorAll(".catalog__content-item");
+
+    tabs.forEach((tab, index) => {
+        tab.addEventListener("click", () => {
+            // Удаляем активный класс у всех табов и контента
+            tabs.forEach((t) => t.classList.remove("catalog__tab_active"));
+            contents.forEach((c) => (c.style.display = "none"));
+
+            // Добавляем активный класс к нажатому табу и показываем соответствующий контент
+            tab.classList.add("catalog__tab_active");
+            contents[index].style.display = "block";
+        });
+    });
+
+    // Показываем первый контент при загрузке
+    contents.forEach((c, i) => (c.style.display = i === 0 ? "block" : "none"));
+} catch (e) { }

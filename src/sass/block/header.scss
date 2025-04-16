@@ -10,6 +10,7 @@
         height: 100vh;
         background-color: $light;
         transition: transform 0.4s;
+        z-index: 100;
 
         &-active {
             transform: translateX(100vw);
