@@ -61,10 +61,10 @@ try {
 
             // Добавляем активный класс к нажатому табу и показываем соответствующий контент
             tab.classList.add("catalog__tab_active");
-            contents[index].style.display = "block";
+            contents[index].style.display = "flex";
         });
     });
 
     // Показываем первый контент при загрузке
-    contents.forEach((c, i) => (c.style.display = i === 0 ? "block" : "none"));
+    contents.forEach((c, i) => (c.style.display = i === 0 ? "flex" : "none"));
 } catch (e) { }

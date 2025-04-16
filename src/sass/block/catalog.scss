@@ -38,4 +38,41 @@
             background-color: #000;
         }
     }
+
+    &__content {
+        margin: 60px 0;
+
+        &-item {
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+        }
+
+        &-card {
+            width: 340px;
+            box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+        }
+
+        &-info {
+            padding: 11px 12px;
+        }
+
+        &-title {
+            color: #000;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        &-price {
+            margin-top: 8px;
+            color: #000;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+    }
 }
