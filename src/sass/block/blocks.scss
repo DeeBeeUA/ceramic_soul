@@ -1,0 +1,79 @@
+@use '/src/sass/base/mixins.scss' as *;
+@use '/src/sass/base/variables.scss' as *;
+
+.blog {
+    padding-top: 50px;
+
+    &__title {
+        margin-top: 60px;
+    }
+
+    &__title-h3 {
+        text-align: left;
+    }
+
+    &__wrapper {
+        margin-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    &__card {
+        border: 1px solid $dark;
+        background: $light;
+        box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    &__data {
+        &-column {
+            display: flex;
+            flex-direction: column;
+            row-gap: 25px;
+
+            padding: 25px 25px 0 25px;
+        }
+    }
+
+    &__img {
+        max-inline-size: calc(100% + 2px);
+        transform: translateX(-1px) translateY(-1px);
+    }
+
+    &__text {
+        margin-top: 25px;
+        padding: 0 25px 25px 25px;
+
+        color: $dark;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .blog {
+        &__wrapper {
+            position: relative;
+            padding: 25px 25px 0 25px;
+            @include angle-decoration;
+        }
+
+        &__text {
+            margin-top: 15px;
+        }
+
+        &__btn {
+            transform: translateY(-1px); // temporary decision
+        }
+
+        &__data {
+            &-column {
+                row-gap: 0;
+                justify-content: space-between;
+            }
+        }
+
+    }
+}

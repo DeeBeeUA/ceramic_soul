@@ -5,14 +5,43 @@
     @include button;
     width: 230px;
     height: 50px;
-    transition: all .3s ease-out;
+    // transition: all .3s ease-out;
 }
+
+// .btn-send {
+//     @include button;
+//     width: 220px;
+//     height: 40px;
+//     font-size: 16px;
+
+//     &:focus {
+//         outline: 1px solid $ceramic;
+//         border: 1px solid $ceramic;
+//     }
+
+//     &:disabled {
+//         color: $ui-disabled;
+//         border: 1px solid $ui-disabled;
+//     }
+// }
 
 .btn-form {
     @include button;
     width: 220px;
     height: 40px;
-    transition: all .3s ease-out;
+    // transition: all .3s ease-out;
+}
+
+.btn-read {
+    @include button;
+    width: 145px;
+    height: 32px;
+    font-size: 14px;
+
+    &:focus {
+        outline: 1px solid $ceramic;
+        border: 1px solid $ceramic;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -43,7 +72,22 @@
             background: #FFF;
         }
     }
+
+    .btn-read {
+        &:hover {
+            border-radius: 2px;
+            border: 1px solid $dark;
+            background: #FFF;
+        }
+
+        &:focus {
+            border-radius: 2px;
+            border: 1px solid $dark;
+            background: #FFF;
+        }
+    }
 }
+
 
 @media screen and (min-width: 1920px) {
     .btn-default {
