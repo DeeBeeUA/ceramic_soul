@@ -120,11 +120,13 @@
                         </div>
                     </fieldset>
                     <label for="textarea" class="form__label">Your question</label>
-                    <textarea name="textarea" id="textarea" class="form__textarea" placeholder="Question"></textarea>
-                    <div class="form__check">
+                    <textarea name="textarea" id="question" class="form__textarea" placeholder="Question"></textarea>
+                    <div class="error-message"></div>
+                    <label for="checkbox" class="form__label-policy">
                         <input required type="checkbox" name="checkbox" id="checkbox" class="form__input-check">
-                        <label for="checkbox" class="form__label-policy">I agree with the <a href="#">terms</a></label>
-                    </div>
+                        I agree with the
+                        <a href="#">terms</a></label>
+                    <div class="checkbox-error-message"></div>
                     <button type="submit" class="form__btn btn-form">send request</button>
                 </form>
                 <img src="/src/img/first_page/touch_section/vase.png" alt="vase" class="touch__vase">

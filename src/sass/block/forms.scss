@@ -22,6 +22,9 @@
         }
 
         &-policy {
+            margin-top: 20px;
+            align-items: center;
+            display: flex;
             color: $dark;
             font-family: Inter;
             font-size: 14px;
@@ -30,6 +33,7 @@
             line-height: 28px;
 
             & a {
+                margin-left: 4px;
                 color: #A22DC6;
                 text-decoration: none;
             }
@@ -46,7 +50,13 @@
         background: #FFF;
         outline-color: $dark;
 
+        &:focus {
+            border: none;
+            outline: 1px solid $dark;
+        }
+
         &-check {
+            margin-right: 15px;
             width: 15px;
             height: 15px;
         }
@@ -85,6 +95,7 @@
     &__check {
         margin-top: 20px;
         display: flex;
+        flex-wrap: wrap; // for validator message next line
         gap: 0 15px;
         align-items: center;
     }
