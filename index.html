@@ -167,12 +167,16 @@
                     <div class="footer__header">newsletter</div>
                     <div class="footer__text">Keep up to date with news and promotions</div>
                     <form class="footer_form">
-                        <input class="footer__input-email" type="email" placeholder="Enter your e-mail">
+                        <input class="footer__input-email" type="email" placeholder="Enter your e-mail" name="email"
+                            required>
+                        <div class="email-error-message"></div>
                         <fieldset class="footer__fiealdset">
-                            <input class="footer__input-checkbox" type="checkbox" name="footer-input" id="footer-input">
+                            <input class="footer__input-checkbox" type="checkbox" name="footer-input" id="footer-input"
+                                required>
                             <label class="footer__label-checkbox" for="footer-input">I agree with the <a
                                     href="#">terms</a></label>
                         </fieldset>
+                        <div class="checkbox-error-message"></div>
                         <button type="submit" class="btn-form footer__btn">submit</button>
                     </form>
                 </div>

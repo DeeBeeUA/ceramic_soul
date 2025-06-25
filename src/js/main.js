@@ -119,3 +119,33 @@ try {
                 .parentElement.parentElement.querySelector('.checkbox-error-message')
         })
 } catch (e) { }
+
+try {
+    const validatorFooter = new JustValidate('.footer_form', { submitFormAutomatically: true });
+    validatorFooter
+        .addField('.footer__input-email', [
+            {
+                rule: 'required',
+            },
+            {
+                rule: 'email',
+            },
+        ],
+            {
+                errorsContainer: document
+                    .querySelector('.footer__input-email')
+                    .parentElement.querySelector('.email-error-message')
+            }
+        )
+        .addField('.footer__input-checkbox', [
+            {
+                rule: 'required',
+            }
+        ], {
+            errorsContainer: document
+                .querySelector('.footer__input-checkbox')
+                .parentElement.parentElement.querySelector('.checkbox-error-message')
+        }
+        )
+
+} catch (e) { }
